@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class stud{
+	char sid;
+	char name;
+	int m1,m2,m3;
+	float avg;
+}
+public class arraystudent extends stud {
+	 void getd()
+ {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the Student ID");
+		sid=s.next().charAt(0);
+		System.out.println("Enter the Student name");
+		name=s.next().charAt(0);
+		System.out.println("Enter the 3 subject marks");
+		m1=s.nextInt();
+		m2=s.nextInt();
+		m3=s.nextInt();
+		avg=(float)(m1+m2+m3)/3;
+	}
+
+		void printd()
+		{
+			System.out.println(" Student ID:"+sid);
+			System.out.println(" Student Name:"+name);
+			System.out.println("Student mark1:"+m1);
+			System.out.println("Student mark2:"+m2);
+			System.out.println("Student mark3:"+m3);
+			System.out.println("Student avg mark:"+avg);
+		}
+
+	public static void main(String[] args) {
+	
+	arraystudent s2=new arraystudent();
+		s2.getd();
+		s2.printd();
+		
+	}
+
+}
